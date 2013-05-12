@@ -1,0 +1,163 @@
+/*!
+
+ ___                  ___
+ \__\                /  /
+   ___      /\      /  /
+   \  \    /  \    /  /
+    \  \  /    \  /  /
+     \  \/  /\  \/  /
+      \    /  \    /
+       \  /    \  /
+        \/      \/
+
+Written by @iestynw
+
+*/
+
+
+
+@import "html5-reset"
+@import "font-awesome"
+
+
+
+/*——————————————————————————————————————————————————————————————————————————————
+U T I L I T I E S
+——————————————————————————————————————————————————————————————————————————————*/
+
+
+// Linear gradients
+linearGradient(startPoint, startColor, startInterval, endColor, endInterval)
+    background-color rgba(startColor)
+    background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+    background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+
+// Bright outline so you can see stuff
+blueprint(color= cyan)
+    border 1px dashed color
+
+// Vendor function to output vendor prefixes
+vendor(thing, value)
+  for vendor in vendors
+    if vendor == official
+      {thing} value
+    else
+      -{vendor}- {thing} value
+
+// Transparent function for border radius
+border-radius()
+    vendor(border-radius, arguments)
+
+// Micro ClearFix hack
+cf()
+    *zoom 1
+    &:before, &:after
+        content ""
+        display table
+    &:after
+        clear both
+
+// -9999px replacement hack
+indentOutOfSight()
+    text-indent 100%
+    white-space nowrap
+    overflow hidden
+    color transparent 
+
+// Colour functions to provide solid colour fallbacks for old browsers
+background-color()
+    if arguments == transparent
+       background-color transparent
+    else if alpha(arguments) != 1
+        background-color rgb(arguments)
+        background-color rgba(arguments)
+     
+    else
+        background-color arguments
+color()
+    if arguments == transparent
+       color transparent
+    else if alpha(arguments) != 1
+        color rgb(arguments)
+        color rgba(arguments)
+    else
+        color arguments
+
+// Some CSS3 modifiers
+transform()
+    vendor(transform, arguments)
+transition(what = all, duration = 200ms, timing = ease)
+    vendor(transition, what duration ease)
+
+
+.widthCalculator
+    position fixed
+    bottom 0
+    right 0
+    background #1ABC9C
+    color #34495E
+    padding 0.5em
+    font-family 'Futura'
+
+
+/*——————————————————————————————————————————————————————————————————————————————
+C O M M O N 
+——————————————————————————————————————————————————————————————————————————————*/
+
+
+// Colours
+yellow = #F8F400
+yellow_fade = #FFF2C2
+blue = #6AB0CE
+blue_dark = #4A86A3
+navy = #405F83
+grey = #698794
+grey_fade = #92B4C2
+black = #26292C
+
+
+
+
+// Typography
+font_body = "adelle", serif
+font_heading = "proxima-nova-soft", sans-serif
+
+
+// Grid
+$column = 100%/18
+$gutter = 0.75em
+
+
+
+// Typical elements
+
+body
+    font-family font_body
+    color black
+    background-color yellow_fade
+
+h1
+h2
+h3
+h4
+    font-family font_heading
+
+section
+    margin 2em $column
+
+
+
+
+
+
+/*——————————————————————————————————————————————————————————————————————————————
+S P E C F I C
+——————————————————————————————————————————————————————————————————————————————*/
+
+h1
+    font-size 2em
+    text-align center
+    color blue_dark

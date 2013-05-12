@@ -1,0 +1,558 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"insert",
+				"insertAfter"
+			],
+			[
+				"first",
+				"firstEditableRow"
+			],
+			[
+				"hidden",
+				"hiddenRow"
+			],
+			[
+				"hdden",
+				"hiddenRow"
+			],
+			[
+				"new",
+				"newEditableRow"
+			],
+			[
+				"fir",
+				"firstEditableRow"
+			],
+			[
+				"fi",
+				"firstEditableRow"
+			],
+			[
+				"listItem",
+				"listItemClick"
+			],
+			[
+				"dep",
+				"deprecatedLibs"
+			],
+			[
+				"Ad",
+				"adBuilder"
+			],
+			[
+				"data",
+				"data-template-name"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"nodeEl",
+				"nodeElementLength"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 74.0,
+		"selected_items":
+		[
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"java",
+				"Format: Javascript"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"handle",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 248.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/app_deprecated/adBuilder.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/jade/modules/content/pageSets.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/templates/spend.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/app_deprecated/adwordsbargraphs.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/app_deprecated/adwordsnav.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/app/app.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/app_deprecated/index.js",
+		"/Users/iest/Desktop/Test.json",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/js/spend/adsuggest.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/less/holistic-base.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/js/global/index.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/lib_deprecated/jquery.transit.js",
+		"/Users/iest/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/templates/dashboard.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/templates/intelligence.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/templates/index.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/templates/content.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/app_deprecated/dashboard.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/app_deprecated/adPerformance.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/Gruntfile.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/jade/modules/marketIntelligence/marketIntelligence.jade",
+		"/Users/iest/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents/Eysys Scratch.md",
+		"/Users/iest/Desktop/default.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/app_deprecated/sites.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/jade/modules/content/sites.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/jade/partials/save-cancel-action-group.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/styles/pikaday.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/styles/holistic-base.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/app/js/libs_deprecated.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/lib_deprecated/jquery.scrollTo.min.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/lib_deprecated/jquery.chosen.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/dashboard.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/index.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/app/js/libs.min.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/Gruntfile-ck.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/lib/index.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/adBuilder.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/deprecated/adsuggest.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/js/deprecated/dashboard.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/js/app.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/less/holistic-base.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/app/js/helper.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/package.json",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/js/deprecated/dashboard.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/templates/index.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/js/app.js",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/less/font-awesome.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/less/source-sans-pro.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/src/less/ubuntu-mono.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/templates/ember_homepage.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/templates/ember_spend.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/less/holistic-base.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/jade/modules/dashboard/homepage.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/hEmber/less/font-awesome.less",
+		"/Users/iest/.Trash/index.html",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/js/sites/sites.js",
+		"/Users/iest/Dropbox/App Sync/Sublime Text 2/Packages/Theme - Flatland/Flatland.sublime-theme",
+		"/Users/iest/Dropbox/App Sync/Sublime Text 2/Packages/Theme - Flatland/Flatland.tmtheme",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/js/spend/adwordsbargraphs.js",
+		"/Users/iest/Library/Application Support/Bowtie/TDStore.plist",
+		"/Users/iest/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/jade/navs/settings-nav.jade",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/pagesets/cosmos_template/base.less",
+		"/Users/iest/Documents/holistic-main/holistic/public/assets/admin/js/catalogue.js",
+		"/Users/iest/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/iest/Desktop/Preferences.json"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>",
+			"*.js, *.jade"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"rgb(229,230,230)",
+			"opac",
+			"orange",
+			"editableRowV2",
+			"v2",
+			"create",
+			"click",
+			"keyup",
+			"live",
+			"'#list-container .list-item:first'",
+			"listItemClick",
+			"listItemCl",
+			"listitemclick",
+			"copyeve",
+			"y",
+			"enable",
+			"cancel",
+			"setStage",
+			"pjax",
+			"runsc",
+			"docum",
+			"/*",
+			"setStage",
+			"runScripts",
+			"runScripts();",
+			"runIndexScripts",
+			"getRoot",
+			"processNodes",
+			"twoDecimalPlaces",
+			"w Array();",
+			"/src",
+			"pages",
+			"include",
+			"incude",
+			"include",
+			"ready",
+			"body>div",
+			"setstage",
+			"alertData",
+			"ready",
+			"document",
+			"sli",
+			"setFromString",
+			"scripts",
+			"setFromString",
+			".live",
+			"live",
+			"setFromString",
+			"typeahead",
+			"libs",
+			"buildHelper",
+			"bootstrap",
+			"uiLib",
+			"Helper",
+			"helper",
+			"Holistic",
+			"adsuggest",
+			"save",
+			"resource",
+			"nav-active",
+			"active",
+			"resource",
+			"include",
+			"App",
+			"homepage",
+			"libs",
+			"runDashboard",
+			"dashboard",
+			"app",
+			"dist",
+			"built",
+			"@import",
+			"import",
+			"fontawesome",
+			"select",
+			"nav-active",
+			"nav",
+			"href",
+			"body",
+			"user",
+			"src",
+			"setStage",
+			"uiLib",
+			"edit",
+			"breadcru",
+			"click",
+			".chosen(",
+			"chzn",
+			"templates",
+			"BTWindowOrigin",
+			"string>{1622, -1}</string>",
+			"curl",
+			"lion",
+			"cache",
+			"listItem",
+			"editButtons",
+			"sites.pages.current",
+			"clone",
+			"create",
+			"_",
+			"sites.pages.load = function()",
+			"pagesets",
+			"(",
+			"(\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"();\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"spend",
+				"hEmber/src/templates/spend.jade"
+			],
+			[
+				"app",
+				"hEmber/src/app/app.js"
+			],
+			[
+				"grunt",
+				"hEmber/Gruntfile.js"
+			],
+			[
+				"hols",
+				"hEmber/src/styles/holistic-base.less"
+			],
+			[
+				"adbu",
+				"hEmber/src/deprecated/app_deprecated/adBuilder.js"
+			],
+			[
+				"index",
+				"hEmber/src/templates/index.jade"
+			],
+			[
+				"sites",
+				"hEmber/src/deprecated/app_deprecated/sites.js"
+			],
+			[
+				"index.js",
+				"hEmber/src/deprecated/app_deprecated/index.js"
+			],
+			[
+				"index.jade",
+				"hEmber/src/templates/index.jade"
+			],
+			[
+				"transi",
+				"hEmber/src/deprecated/lib_deprecated/jquery.transit.js"
+			],
+			[
+				"i",
+				"hEmber/src/deprecated/app_deprecated/index.js"
+			],
+			[
+				"index.",
+				"hEmber/src/deprecated/app_deprecated/index.js"
+			],
+			[
+				"adbui",
+				"hEmber/src/deprecated/app_deprecated/adBuilder.js"
+			],
+			[
+				"adper",
+				"hEmber/src/deprecated/app_deprecated/adPerformance.js"
+			],
+			[
+				"holist",
+				"hEmber/src/styles/holistic-base.less"
+			],
+			[
+				"dash",
+				"hEmber/src/templates/dashboard.jade"
+			],
+			[
+				"sites.js",
+				"hEmber/src/deprecated/app_deprecated/sites.js"
+			],
+			[
+				"hol",
+				"hEmber/src/styles/holistic-base.less"
+			],
+			[
+				"pika",
+				"hEmber/src/styles/pikaday.less"
+			],
+			[
+				"app.js",
+				"hEmber/src/app/app.js"
+			],
+			[
+				"libs_de",
+				"hEmber/app/js/libs_deprecated.js"
+			],
+			[
+				"dashboard",
+				"hEmber/src/deprecated/app_deprecated/dashboard.js"
+			],
+			[
+				"font",
+				"hEmber/less/font-awesome.less"
+			],
+			[
+				"holst",
+				"hEmber/less/holistic-base.less"
+			],
+			[
+				"idnex",
+				"js/global/index.js"
+			],
+			[
+				"ites",
+				"js/sites/sites.js"
+			],
+			[
+				"holi",
+				"less/holistic-base.less"
+			],
+			[
+				"sett",
+				"public/assets/admin/jade/navs/settings-nav.jade"
+			],
+			[
+				"rout",
+				"conf/routes"
+			],
+			[
+				"tem",
+				"src/core/http/Template.java"
+			],
+			[
+				"base",
+				"public/assets/pagesets/cosmos_template/base.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/iest/Dropbox/My Github repos/bluggr/Bluggr.sublime-project"
+			],
+			[
+				"hor",
+				"~/Dropbox/Eysys/ST3 projects/Horizon.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true
+}
