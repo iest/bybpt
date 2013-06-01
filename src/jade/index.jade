@@ -22,12 +22,73 @@ html(lang='en')
         link(rel='stylesheet', type='text/css', href='styles.css')
 
         //- Google analytics
+        //- 
 
-
-        //- Width thingy
-        script(src='app.min.js')
+        //- Livereload script
+        | <script src="http://localhost:35729/livereload.js"></script>
 
 
     body
-        section
-            h1 Be Your Best Personal Training
+        .container
+            header.header
+                h1
+                    img.logo(src='/images/bybpt_logo_large.png')
+                    | Be Your Best Personal Training
+
+                nav
+                    ul
+                        li: a(href='#') Team
+                        li: a(href='#') Prices
+                        li: a(href='#') Contact
+                        
+
+            section.section--slider.no-padding
+                .swipe
+                    .swipe-wrap
+                        div
+                            img(src='/images/slide1.jpg')
+                        div
+                            img(src='/images/slide2.jpg')
+                        div
+                            img(src='/images/slide3.jpg')
+                        div
+                            img(src='/images/slide4.jpg')
+                    .swipe-controls
+                        .control--left: i.icon-angle-left
+                        .control--right: i.icon-angle-right
+
+
+
+            section.section--srp
+                .srp
+                    :markdown
+                        ## Lifestyle changes can be daunting. We can help.
+                        ### We're here to help *develop* knowledge, *support* you when it's needed most and *motivate* you to be your best.
+
+            section.section--profiles
+                .section__title
+                    h1 Meet the team
+                .profile
+                    .profile__image
+                        img(src='/images/profile_lucy.png')
+                    h2 Lucy
+                    .profile__quote
+                        :markdown
+                            "With years of experience of one to one personal training I have a developed a very holistic approach: firmly believing that if the cycle of sleeping, moving, eating, hydrating and managing life can be balanced correctly, our general well being will be vastly improved. 
+                            
+                            My background involves a mixture of gymnastics, mountain biking, fell running, mountaineering and weight lifting.
+
+                            I have lots of energy and enthusiasm teamed with a deep interest in people, human movement and mindset."
+
+                .profile
+                    .profile__image
+                        img(src='/images/profile_rhodri.png')
+                    h2 Rhodri
+                    .profile__quote
+                        :markdown
+                            "My sporting background extends back as far as I can remember, with sport being an instrumental part of my life from a very young age. My sporting history includes playing football for a semi-professional club as well as trials at international levels. As well as a keen footballer, during my youth days I competed to a high standard in rugby and both track and field in athletics.
+                            
+                            Having a career linked to sport, fitness and wellbeing is something I’ve always strived towards, so the obvious step for me was taking a degree in this field, and I achieved this by gaining a BSc (hons) (Bachelor of Science) in Sport and Physical Education at UWIC."
+
+
+        script(src='app.min.js')

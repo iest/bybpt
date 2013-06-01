@@ -18,80 +18,7 @@ Written by @iestynw
 
 @import "html5-reset"
 @import "font-awesome"
-
-
-
-/*——————————————————————————————————————————————————————————————————————————————
-U T I L I T I E S
-——————————————————————————————————————————————————————————————————————————————*/
-
-
-// Linear gradients
-linearGradient(startPoint, startColor, startInterval, endColor, endInterval)
-    background-color rgba(startColor)
-    background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-
-// Bright outline so you can see stuff
-blueprint(color= cyan)
-    border 1px dashed color
-
-// Vendor function to output vendor prefixes
-vendor(thing, value)
-  for vendor in vendors
-    if vendor == official
-      {thing} value
-    else
-      -{vendor}- {thing} value
-
-// Transparent function for border radius
-border-radius()
-    vendor(border-radius, arguments)
-
-// Micro ClearFix hack
-cf()
-    *zoom 1
-    &:before, &:after
-        content ""
-        display table
-    &:after
-        clear both
-
-// -9999px replacement hack
-indentOutOfSight()
-    text-indent 100%
-    white-space nowrap
-    overflow hidden
-    color transparent 
-
-// Colour functions to provide solid colour fallbacks for old browsers
-background-color()
-    if arguments == transparent
-       background-color transparent
-    else if alpha(arguments) != 1
-        background-color rgb(arguments)
-        background-color rgba(arguments)
-     
-    else
-        background-color arguments
-color()
-    if arguments == transparent
-       color transparent
-    else if alpha(arguments) != 1
-        color rgb(arguments)
-        color rgba(arguments)
-    else
-        color arguments
-
-// Some CSS3 modifiers
-transform()
-    vendor(transform, arguments)
-transition(what = all, duration = 200ms, timing = ease)
-    vendor(transition, what duration ease)
-
+@import "util"
 
 .widthCalculator
     position fixed
@@ -110,20 +37,24 @@ C O M M O N
 
 // Colours
 yellow = #F8F400
-yellow_fade = #FFF2C2
-blue = #6AB0CE
-blue_dark = #4A86A3
-navy = #405F83
+green = #53C514
+green_dark = #5A923A
+purple = #5F3EF9
+blue = #1424C5
+
+white = #F5F5F5
 grey = #698794
 grey_fade = #92B4C2
-black = #26292C
+black = #373637
 
+bg_light = #E9E9E9
+bg_dark = #414141
 
 
 
 // Typography
-font_body = "adelle", serif
-font_heading = "proxima-nova-soft", sans-serif
+font_body = "ff-tisa-web-pro", serif // 400 700
+font_heading = "futura-pt", "Futura", sans-serif // 300 400 500 700 800
 
 
 // Grid
@@ -131,25 +62,95 @@ $column = 100%/18
 $gutter = 0.75em
 
 
+/*——————————————————————————————————————————————————————————————————————————————
+G L O B A L S
+——————————————————————————————————————————————————————————————————————————————*/
 
-// Typical elements
+
+.container
+    max-width 60em
+    margin 0 auto
+    @media(min-width: 60em)
+        border-left 1px solid rgba(bg_dark, 0.15)
+        border-right 1px solid rgba(bg_dark, 0.15)
 
 body
     font-family font_body
     color black
-    background-color yellow_fade
+    background-color bg_light
+
+img
+    width 100%
 
 h1
 h2
 h3
 h4
     font-family font_heading
+    margin 0.5em 0
+
+h1
+    font-size 2em
+    text-align center
+h2
+    font-size 1.5em
+h3
+    font-size 1.25em
+
+
 
 section
-    margin 2em $column
+    clear both
+    border-bottom 3px solid yellow
+    padding-bottom 5em
+    &.no-padding
+        padding 0
+section:nth-child(odd)
+    background-color rgba(white, 0.5)
 
 
+.section__title
+    text-transform uppercase
 
+
+/*——————————————————————————————————————————————————————————————————————————————
+S L I D E R
+——————————————————————————————————————————————————————————————————————————————*/
+
+.swipe
+    overflow hidden
+    visibility hidden
+    position relative
+
+.swipe-wrap
+    overflow hidden
+    position relative
+
+.swipe-wrap > div
+    float left
+    width 100%
+    position relative
+
+.swipe-controls
+    .control--left
+    .control--right
+        display inline-block
+        background-color bg_dark
+        color bg_light
+        position absolute
+        bottom 1px
+        z-index 1000
+        padding 0.5em 0.75em
+        opacity 0.5
+        cursor pointer
+        transition()
+        &:hover
+        &:active
+            opacity 1
+    .control--left
+        left 0
+    .control--right
+        right 0
 
 
 
@@ -157,7 +158,139 @@ section
 S P E C F I C
 ——————————————————————————————————————————————————————————————————————————————*/
 
-h1
-    font-size 2em
+
+.header
+    margin 1em $column
     text-align center
-    color blue_dark
+    h1
+        font-size 1.75em
+        font-weight 700
+        text-transform uppercase
+        color black
+        margin 0
+        padding 0
+        text-align center
+
+        .logo
+            display block
+            margin 0.5em auto
+            width 3em
+            vertical-align middle
+
+    nav
+        clear both
+        ul
+            display inline-block
+            background-color bg_dark
+            border-radius 5px
+            font-family font_heading
+            font-weight 700
+            text-transform uppercase
+            text-align center
+            font-size 1.25em
+            margin 1em 0 0
+        li
+            display inline-block
+            padding 0.25em 0.5em
+        a
+            display inline-block
+            color bg_light
+            text-decoration none
+            border-bottom 2px solid yellow
+            margin 0.15em
+
+    @media(min-width: 32em)
+        margin 1em $column
+        h1
+            text-align left
+            .logo
+                display inline-block
+                margin 0
+                margin-right 0.5em
+                width 2.5em
+                float left
+    @media(min-width: 47em)
+        h1
+            width 50%
+            display inline-block
+            float left
+            .logo
+                width 3em
+        nav
+            display inline-block
+            width 50%
+            ul
+                margin 0.5em
+
+.section--profiles
+    width 100%
+.profile
+    text-align center
+    padding 1em 2em
+    margin 0
+    h2
+        font-size 1.5em
+        font-weight 300
+    @media(min-width:39em)
+        width 50%
+        display inline-block
+        vertical-align top
+        padding 0
+
+.profile__image
+    position relative
+    z-index 2
+    border-radius 100%
+    width 100%
+    max-width 9.75em
+    display inline-block
+    overflow hidden
+
+    img
+        position relative
+        z-index -100
+        height 100%
+        max-height 9.75em
+        border-radius 100%
+
+.profile__quote
+    text-align left
+    font-weight 300
+    margin 1em ($column/2)
+    padding 0.5em ($column/2)
+    border-radius 5px
+    line-height 1.5em
+    background-color rgba(white, 0.75)
+    color lighten(black, 10%)
+    clear both
+
+
+.srp
+    clear both
+    padding 1em $column
+    text-align left
+
+    h2
+    h3
+        font-size 1.5em
+        line-height 1.5em
+        font-weight 200
+        font-family font_body
+
+        em
+            color green
+    h2
+        font-family font_heading
+        font-weight 600
+        font-size 2.5em
+        line-height 1.2em
+        margin 0.5em 0
+
+    @media(min-width: 45em)
+        position relative
+        z-index 10
+        margin 0 $column
+        border-radius 5px
+        margin-top -10em
+        box-shadow 0 0 5em rgba(grey, 0.5)
+        background-color rgba(bg_light, 0.95)

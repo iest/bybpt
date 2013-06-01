@@ -30,28 +30,43 @@ module.exports = function(grunt) {
         }
       }
     },
+    concat: {
+      dist: {
+        src: ['src/js/*.js'],
+        dest: 'dist/app.js'
+      }
+    },
     uglify: {
         options: {
           mangle: false
         },
         my_target: {
           files: {
-            'dist/app.min.js': ['src/js/app.js']
+            'dist/app.min.js': ['dist/app.js']
           }
         }
       },
     watch: {
       styles: {
         files: 'src/stylus/*.styl',
-        tasks: ['stylus']
+        tasks: ['stylus'],
+        options: {
+          livereload: true
+        }
       },
       templates: {
         files: 'src/jade/*.jade',
-        tasks: ['jade']
+        tasks: ['jade'],
+        options: {
+          livereload: true
+        }
       },
       scripts: {
         files: 'src/js/*.js',
-        tasks: ['uglify']
+        tasks: ['concat','uglify'],
+        options: {
+          livereload: true
+        }
       }
     }
   });
@@ -61,8 +76,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task.
-  grunt.registerTask('default', ['jade', 'stylus', 'uglify']);
+  grunt.registerTask('default', ['jade', 'stylus','concat', 'uglify']);
 
 };

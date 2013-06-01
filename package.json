@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "",
-  "author": "",
-  "license": "BSD"
+  "author": "Iestyn Williams",
+  "license": "BSD",
+  "devDependencies": {
+    "markdown": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0"
+  }
 }
