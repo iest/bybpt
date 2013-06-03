@@ -66,13 +66,13 @@ $gutter = 0.75em
 G L O B A L S
 ——————————————————————————————————————————————————————————————————————————————*/
 
+*
+    vendor(box-sizing, border-box)
+
 
 .container
     max-width 60em
     margin 0 auto
-    @media(min-width: 60em)
-        border-left 1px solid rgba(bg_dark, 0.15)
-        border-right 1px solid rgba(bg_dark, 0.15)
 
 body
     font-family font_body
@@ -102,11 +102,8 @@ h3
 section
     clear both
     border-bottom 3px solid yellow
-    padding-bottom 5em
     &.no-padding
         padding 0
-section:nth-child(odd)
-    background-color rgba(white, 0.5)
 
 
 .section__title
@@ -202,35 +199,50 @@ S P E C F I C
     @media(min-width: 32em)
         margin 1em $column
         h1
-            text-align left
+            line-height 25%
+            margin-bottom 0.5em
             .logo
+                position relative
+                top 0.5em
                 display inline-block
                 margin 0
                 margin-right 0.5em
                 width 2.5em
-                float left
+    @media(min-width: 39em)
+        h1
+            margin-bottom 0
+            .logo
+                position static
+                vertical-align middle
     @media(min-width: 47em)
         h1
-            width 50%
+            width 55%
             display inline-block
             float left
+            line-height 100%
+            text-align left
+            margin-bottom 0.25em
             .logo
+                vertical-align baseline
                 width 3em
+                float left
         nav
             display inline-block
-            width 50%
+            width 45%
             ul
                 margin 0.5em
 
 .section--profiles
     width 100%
+    padding 0 $column
 .profile
     text-align center
-    padding 1em 2em
-    margin 0
+    padding 1em 0
     h2
-        font-size 1.5em
+        font-size 1.75em
         font-weight 300
+    p
+        margin-bottom 0.5em
     @media(min-width:39em)
         width 50%
         display inline-block
@@ -285,6 +297,7 @@ S P E C F I C
         font-size 2.5em
         line-height 1.2em
         margin 0.5em 0
+        text-shadow 0 0.125em 0.5em rgba(grey, 0.35)
 
     @media(min-width: 45em)
         position relative
@@ -292,5 +305,75 @@ S P E C F I C
         margin 0 $column
         border-radius 5px
         margin-top -10em
-        box-shadow 0 0 5em rgba(grey, 0.5)
-        background-color rgba(bg_light, 0.95)
+        margin-bottom 2em
+        box-shadow 0 0 3em rgba(grey, 0.5)
+        background-color bg_light
+
+.section--qual
+    text-align center
+    padding-bottom 1em
+    img
+        width 5em
+        margin 0.25em
+        display inline-block
+
+.section--prices
+    text-align center
+.price--small
+.price--large
+    background-color white
+    padding 0.5em
+    background-color darken(bg_light, 5%)
+    margin 0 $column*2
+    padding 1em
+    color bg_dark
+    border 0.15em solid darken(bg_light, 20%)
+    border-radius 4px
+    box-shadow 0 0.25em 1em darken(bg_light, 15%)
+    .price
+        color lighten(bg_dark, 20%)
+        .price__amount
+            color bg_dark
+            font-size 3em
+            font-family font_heading
+            display block
+            margin 0.25em 0 0
+        .price__total
+            display block
+            font-size 60%
+            margin-top 1em
+            color lighten(bg_dark, 30%)
+.price--large
+    position relative
+    z-index 5
+    font-size 1.5em
+    margin 0 $column
+    margin-top -0.25em
+    margin-bottom -0.25em
+    box-shadow 0 0.25em 1em darken(bg_light, 35%)
+    border 0.25em solid lighten(bg_dark, 30%)
+    .price__amount
+        font-weight 700
+    .price span
+        // 
+.price__discount
+    clear both
+    padding 1em
+    font-size 80%
+    color lighten(bg_dark, 50%)
+
+@media(min-width: 28em)
+    .price--small
+    .price--large
+        width 100%/3
+        display inline-block
+        margin 0
+        vertical-align middle
+    .price--large
+        margin 0 -0.5em 0
+    .price--small
+        font-size 1.25em
+@media(min-width: 45em)
+    .price--small
+    .price--large
+        padding 2em
