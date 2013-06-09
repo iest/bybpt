@@ -389,7 +389,8 @@ h1,h2,h3,h4{font-family:"futura-pt","Futura",sans-serif;margin:.5em 0}
 h1{font-size:2em;text-align:center}
 h2{font-size:1.5em}
 h3{font-size:1.25em}
-section{clear:both;border-bottom:3px solid #f8f400;}
+hr{border-bottom:3px solid #f8f400;border-top:1px solid #c6c6c6}
+section{clear:both;}
 section.no-padding{padding:0}
 .section__title{text-transform:uppercase}
 .swipe{overflow:hidden;visibility:hidden;position:relative}
