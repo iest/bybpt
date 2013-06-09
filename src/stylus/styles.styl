@@ -319,39 +319,44 @@ S P E C F I C
 
 .section--prices
     text-align center
+    margin 0 $column
 .price--small
 .price--large
+    width 30%
+    max-width 8em
+    display inline-block
+    margin 0
+    vertical-align middle
     background-color white
-    padding 0.5em
+    padding 0.25em
     background-color darken(bg_light, 5%)
-    margin 0 $column*2
-    padding 1em
     color bg_dark
-    border 0.2em solid darken(bg_light, 20%)
+    border 0.1em solid rgba(green, 0.7)
     border-radius 4px
     box-shadow 0 0.25em 1em darken(bg_light, 15%)
+    .session
+        font-size 90%
     .price
         color lighten(bg_dark, 20%)
+        font-size 60%
         .price__amount
             color bg_dark
             font-size 3em
             font-family font_heading
             display block
-            margin 0.25em 0 0
+            margin 0.5em 0 0
         .price__total
             display block
-            font-size 60%
-            margin-top 1em
+            font-size 70%
+            margin-top 2em
             color lighten(bg_dark, 30%)
+.price--small
+    border 0.1em solid darken(bg_light, 10%)
 .price--large
+    width 40%
     position relative
     z-index 5
-    font-size 1.5em
-    margin 0 $column
-    margin-top -0.25em
-    margin-bottom -0.25em
-    box-shadow 0 0.25em 1em darken(bg_light, 35%)
-    border 0.25em solid lighten(bg_dark, 30%)
+    font-size 1.25em
     .price__amount
         font-weight 700
     .price span
@@ -362,18 +367,36 @@ S P E C F I C
     font-size 80%
     color lighten(bg_dark, 50%)
 
-@media(min-width: 28em)
-    .price--small
+@media(min-width: 32em)
+    .price__container
+        font-size 120%
+
+@media(min-width: 42em)
     .price--large
-        width 100%/3
+        margin 0 0.25em
+    .price__container
+        font-size 140%
+
+
+
+
+.section--contact
+    margin 0 $column
+
+
+footer
+    font-family font_heading
+    text-align center
+    background bg_dark
+    color lighten(bg_dark, 20%)
+    padding 2em $column
+    a
         display inline-block
-        margin 0
-        vertical-align middle
-    .price--large
-        margin 0 -0.5em 0
-    .price--small
-        font-size 1.25em
-@media(min-width: 45em)
-    .price--small
-    .price--large
-        padding 2em
+        opacity 0.2
+        transition()
+        &:hover
+        &:active
+            opacity 1
+    img
+        width 2em
+        margin-top 1.5em

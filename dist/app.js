@@ -2,6 +2,7 @@ var bodyFontSize = 16; // Define the body font-size of your browser
 var d; // Just to define this before the document is ready...
 
 
+
 window.onload = function(){
     d = document.createElement('div'); // Create a div
 
@@ -27,7 +28,7 @@ window.onload = function(){
     // Swipejs slider
     slider = new Swipe(document.querySelector('.swipe'), {
       speed: 400,
-      auto: 3000,
+      auto: 5000,
       continuous: true,
       disableScroll: false,
       stopPropagation: false
