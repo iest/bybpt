@@ -389,7 +389,7 @@ h1,h2,h3,h4{font-family:"futura-pt","Futura",sans-serif;margin:.5em 0}
 h1{font-size:2em;text-align:center}
 h2{font-size:1.5em}
 h3{font-size:1.25em}
-hr{border-bottom:3px solid #f8f400;border-top:1px solid #c6c6c6}
+hr{border-bottom:2px solid #f8f400;border-top:0;box-shadow:0 0 1em rgba(105,135,148,0.25)}
 section{clear:both;}
 section.no-padding{padding:0}
 .section__title{text-transform:uppercase}
@@ -445,7 +445,7 @@ section.no-padding{padding:0}
 }@media (min-width: 42em){.price--large{margin:0 .25em}
 .price__container{font-size:140%}
 }.section--contact{margin:0 5.555555555555555%}
-footer{font-family:"futura-pt","Futura",sans-serif;text-align:center;background:#414141;color:#676767;padding:2em 5.555555555555555%;}
+footer{border-top:3px solid #f8f400;font-family:"futura-pt","Futura",sans-serif;text-align:center;background:#414141;color:#676767;padding:2em 5.555555555555555%;}
 footer a{display:inline-block;opacity:.2;-moz-transition:all 200ms ease;-webkit-transition:all 200ms ease;-o-transition:all 200ms ease;-ms-transition:all 200ms ease;transition:all 200ms ease;}
 footer a:hover,footer a:active{opacity:1}
 footer img{width:2em;margin-top:1.5em}
