@@ -32,7 +32,7 @@ html(lang='en')
         .container
             header.header
                 h1
-                    img.logo(src='/images/bybpt_logo_large.png')
+                    img.logo(src='/images/bybpt_logo.png')
                     | Be Your Best Personal Training
 
                 nav
@@ -46,13 +46,21 @@ html(lang='en')
                 .swipe
                     .swipe-wrap
                         div
-                            img(src='/images/slide1.jpg')
+                            img(src='/images/slider1.jpg')
                         div
-                            img(src='/images/slide2.jpg')
+                            img(src='/images/slider2.jpg')
                         div
-                            img(src='/images/slide3.jpg')
+                            img(src='/images/slider3.jpg')
                         div
-                            img(src='/images/slide4.jpg')
+                            img(src='/images/slider4.jpg')
+                        div
+                            img(src='/images/slider5.jpg')
+                        div
+                            img(src='/images/slider6.jpg')
+                        div
+                            img(src='/images/slider7.jpg')
+                        div
+                            img(src='/images/slider8.jpg')
                     .swipe-controls
                         .control--left: i.icon-angle-left
                         .control--right: i.icon-angle-right
@@ -63,14 +71,30 @@ html(lang='en')
                 .srp
                     :markdown
                         ## Lifestyle changes can be daunting. We can help.
-                        ### We're here to help *develop* knowledge, *support* you when it's needed most and *motivate* you to be your best.
+                        ### We're here to help **develop** knowledge, **support** you when it's needed most and **motivate** you to be your best.
+
+                    .toggleable
+                        button.toggle
+                            i.icon-plus-sign 
+                            | Read More
+                        .toggleable__inner
+                            :markdown
+                                Whether it’s weight loss, toning, gaining muscle, improving your fitness level for an event or merely personal satisfaction; we can educate and motivate you in a fun, unintimidating environment where your goals and enjoyment are our number one priority.
+
+                                With years of experience in the fitness industry we are currently based in the Roath area of Cardiff. We also cover surrounding areas reaching the more rural towns and villages bordering the city. Be Your Best Personal Training offers one to one or small group personal training sessions. These can be taken at your home, outside or at the gym.
+
+                                If you are concerned about coming to use a public gym we can bring the gym to you! Myself and Rhodri have all the equipment needed to fulfil your training needs without you having to leave the house!
+
+                                The outdoor sessions, often held in parks or local forestry areas can be mixed with gym sessions. They are a great way to get some fresh air and give you a different aspect to your exercise needs.
+
+                                All gym training sessions are based in the Roath area of Cardiff in a local, friendly gym. People of all abilities are welcomed and encouraged here.
 
             section.section--profiles
                 .section__title#team
                     h1 Meet the team
                 .profile
                     .profile__image
-                        img(src='/images/profile_lucy.png')
+                        img(src='/images/profile_lucy.jpg')
                     h2 Lucy
                     .profile__quote
                         :markdown
@@ -82,7 +106,7 @@ html(lang='en')
 
                 .profile
                     .profile__image
-                        img(src='/images/profile_rhodri.png')
+                        img(src='/images/profile_rhodri.jpg')
                     h2 Rhodri
                     .profile__quote
                         :markdown
@@ -97,16 +121,30 @@ html(lang='en')
             section.section--qual
                 .section__title
                     h1 Qualifications
-                    :markdown
-                        ![Placeholder](http://placehold.it/90x130.png)
-                        ![Placeholder](http://placehold.it/90x130.png)
-                        ![Placeholder](http://placehold.it/90x130.png)
-                        ![Placeholder](http://placehold.it/90x130.png)
-                        ![Placeholder](http://placehold.it/90x130.png)
-                        ![Placeholder](http://placehold.it/90x130.png)
-                        ![Placeholder](http://placehold.it/90x130.png)
-                        ![Placeholder](http://placehold.it/90x130.png)
+                .profile
+                    .qual__prose
+                        h2 Lucy's:
+                        :markdown
+                            * NASM Certified Personal Trainer Level 3
+                            * GP Referral
+                            * Exercise Prescription for Pre and Post Natal Clients
+                            * Gym Instructor Level 2
+                            * Advanced Nutrition for Weight Management
 
+                            Additional Courses:
+
+                            * Basic Counselling skills Level 1
+                            * Substance Misuse Level 1
+
+                .profile
+                    .qual__prose
+                        h2 Rhodri's:
+                        :markdown
+                            * Personal Trainer Level 3
+                            * BSc (Hons) Sport and Physical Ecucation
+                            * Advanced Gym Instructor Level 2
+                            * First Aid Qualified
+                            * FAW (Football Association of Wales) Leaders Coaching Award.
 
         hr
         .container
@@ -138,6 +176,16 @@ html(lang='en')
             section.section--contact#contact
                 .section__title
                     h1 Contact Us
+                p Give us a call or fill out the form below.
+                ul
+                    li Lucy: 
+                        a.button(href='tel:07921160070')
+                            i.icon-phone 
+                            | 07921 160 070
+                    li Rhodri: 
+                        a.button(href='tel:07929230739')
+                            i.icon-phone 
+                            | 07929 230 739
                 #wufoo-r7x2s9"
                     | Form not showing? Fill it out <a href="http://iestynw.wufoo.com/forms/r7x2s9">here</a>.
                 script(type="text/javascript")

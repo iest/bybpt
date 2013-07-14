@@ -47,11 +47,15 @@ module.exports = function(grunt) {
         }
       },
     watch: {
-      styles: {
+      styl: {
         files: 'src/stylus/*.styl',
-        tasks: ['stylus'],
+        tasks: ['stylus']
+      },
+      css: {
+        files: 'dist/styles.css',
         options: {
-          livereload: true
+          livereload: true,
+          // nospawn: true
         }
       },
       templates: {

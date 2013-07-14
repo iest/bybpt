@@ -97,6 +97,10 @@ h2
 h3
     font-size 1.25em
 
+p
+    margin-bottom 1em
+    line-height 1.25em
+
 hr
     border-bottom 2px solid yellow
     border-top 0
@@ -110,6 +114,25 @@ section
 
 .section__title
     text-transform uppercase
+
+
+
+button
+.button
+    display inline-block
+    background-color bg_dark
+    color white
+    font-family font_heading
+    font-weight 500
+    text-transform uppercase
+    border 0
+    padding 0.5em 0.75em
+    border-radius 5px
+    font-size 0.9em
+    cursor pointer
+    text-decoration none
+    i
+        color yellow
 
 
 /*——————————————————————————————————————————————————————————————————————————————
@@ -129,27 +152,39 @@ S L I D E R
     float left
     width 100%
     position relative
+    
+@media(min-width: 60em)
+    .swipe
+    .swipe-wrap
+    .swipe-wrap > div
+    .swipe-wrap img
+        border-radius 8px
 
 .swipe-controls
     .control--left
     .control--right
         display inline-block
         background-color bg_dark
+        border 2px solid bg_light
         color bg_light
         position absolute
-        bottom 1px
+        bottom 10%
         z-index 1000
         padding 0.5em 0.75em
         opacity 0.5
         cursor pointer
         transition()
+        i
+            font-size 1.5em
         &:hover
         &:active
             opacity 1
     .control--left
-        left 0
+        left -6px
+        border-radius 0 8px 8px 0
     .control--right
-        right 0
+        right -6px
+        border-radius 8px 0 0 8px
 
 
 
@@ -244,7 +279,7 @@ S P E C F I C
         font-size 1.75em
         font-weight 300
     p
-        margin-bottom 0.5em
+        margin-bottom 1em
     @media(min-width:39em)
         width 50%
         display inline-block
@@ -273,16 +308,44 @@ S P E C F I C
     margin 1em ($column/2)
     padding 0.5em ($column/2)
     border-radius 5px
-    line-height 1.5em
     background-color rgba(white, 0.75)
     color lighten(black, 10%)
     clear both
+    p
+        line-height 1.25em
 
+
+.toggleable
+    text-align center
+    .toggle
+        opacity 0.5
+        i
+            display inline-block
+            margin-right 0.35em  
+            transition()
+    .toggleable__inner
+        text-align left
+        position relative
+        opacity 0
+        height 0
+        border-radius 0 0 6px 6px
+        p
+            line-height 1.4em
+    &.active
+        .toggle
+            display none
+        .toggleable__inner
+            opacity 1
+            height auto
 
 .srp
+    position relative
     clear both
     padding 1em $column
     text-align left
+    border-bottom 2px solid yellow
+    box-shadow 0 0 1em rgba(grey, 0.25)
+    margin-bottom 3em
 
     h2
     h3
@@ -292,32 +355,51 @@ S P E C F I C
         font-family font_body
 
         em
-            color green
+            color red
     h2
         font-family font_heading
         font-weight 600
         font-size 2.5em
         line-height 1.2em
         margin 0.5em 0
-        text-shadow 0 0.125em 0.5em rgba(grey, 0.35)
 
     @media(min-width: 45em)
         position relative
         z-index 10
         margin 0 $column
         border-radius 5px
-        margin-top -10em
-        margin-bottom 2em
+        margin-top -9em
+        margin-bottom 3em
         box-shadow 0 0 3em rgba(grey, 0.5)
-        background-color bg_light
+        background-color rgba(bg_light, 0.8)
+        linearGradient(top, rgba(bg_light, 0), 0%, bg_light, 50%)
+        border-top 1px solid rgba(bg_light, 0.9)
+        border-bottom 0
 
 .section--qual
     text-align center
+    margin 0 $column
     padding-bottom 1em
     img
         width 5em
         margin 0.25em
         display inline-block
+
+.qual__prose
+    border-radius 5px
+    background-color rgba(white, 0.75)
+    color lighten(black, 10%)
+    margin 1em ($column/2)
+    padding 0.5em ($column/2)
+    text-align left
+    h2
+        text-align center
+    ul
+        margin-left 1.5em
+        margin-bottom 1em
+    li
+        line-height 1.5em
+
 
 .section--prices
     text-align center
@@ -384,6 +466,15 @@ S P E C F I C
 
 .section--contact
     margin 0 $column
+    text-align center
+    ul
+        list-style none
+        // text-align center
+        font-size 1.1em
+        margin-bottom 1em
+    li
+        display inline-block
+        margin 0.5em 1em
 
 
 footer
