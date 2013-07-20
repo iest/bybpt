@@ -8,7 +8,6 @@ window.onload = function() {
 
   // Swipejs slider
   slider = new Swipe(document.querySelector('.swipe'), {
-    startSlide: Math.ceil(Math.random() * 8),
     speed: 400,
     auto: 4000,
     continuous: true,
