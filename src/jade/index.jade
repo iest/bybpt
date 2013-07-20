@@ -35,7 +35,12 @@ html(lang='en')
                     img.logo(src='/images/bybpt_logo.png')
                     | Be Your Best Personal Training
 
-                nav
+                nav.header-nav
+                    ul
+                        li: a(href='#team') Team
+                        li: a(href='#prices') Prices
+                        li: a(href='#contact') Contact
+                nav.floating-nav
                     ul
                         li: a(href='#team') Team
                         li: a(href='#prices') Prices
@@ -76,7 +81,7 @@ html(lang='en')
                         .control--left: i.icon-angle-left
                         .control--right: i.icon-angle-right
 
-            section.section--read#readmore
+            section.section--read
                 :markdown
                     Whether it’s weight loss, toning, gaining muscle, improving your fitness level for an event or merely personal satisfaction; we can educate and motivate you in a fun, unintimidating environment where your goals and enjoyment are our number one priority.
 
@@ -88,8 +93,9 @@ html(lang='en')
 
                     All gym training sessions are based in the Roath area of Cardiff in a local, friendly gym. People of all abilities are welcomed and encouraged here.
 
+            hr#team
             section.section--profiles
-                .section__title#team
+                .section__title
                     h1 Meet the team
                 .profile
                     .profile__image
@@ -145,9 +151,9 @@ html(lang='en')
                             * First Aid Qualified
                             * FAW (Football Association of Wales) Leaders Coaching Award.
 
-        hr
+        hr#prices
         .container
-            section.section--prices#prices
+            section.section--prices
                 .section__title
                     h1 Prices
                 .price__container

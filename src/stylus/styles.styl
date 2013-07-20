@@ -142,17 +142,11 @@ S L I D E R
 .swipe-wrap > div
     float left
     width 100%
-    max-height 45em
+    // max-height 30em
     position relative
     background-color #f5f5f5
     box-shadow inset 0 0 30em #666
-    
-@media(min-width: 60em)
-    .swipe
-    .swipe-wrap
-    .swipe-wrap > div
-    .swipe-wrap img
-        border-radius 8px
+
 
 .swipe-controls
     .control--left
@@ -217,7 +211,7 @@ S P E C F I C
             text-transform uppercase
             text-align center
             font-size 1.25em
-            margin 1em 0 0
+            margin 0.25em 0 0
         li
             display inline-block
             padding 0.25em 0.25em
@@ -227,6 +221,21 @@ S P E C F I C
             text-decoration none
             border-bottom 2px solid yellow
             margin 0.15em
+    .floating-nav
+        display none
+        visibility hidden
+        position fixed
+        top 0
+        left 0
+        width 100%
+        z-index 20000
+        text-align center
+    @media(min-height:25em) and (max-width: 47em)
+        .nav-fixed
+            display block
+            visibility visible
+        .nav-hide
+            visibility hidden
 
     @media(min-width: 32em)
         margin 1em $column
@@ -266,10 +275,12 @@ S P E C F I C
 
 .section--read
     padding 1em $column
+    padding-top 1em
 
 .section--profiles
     width 100%
     padding 0 $column
+    padding-top 1em
 .profile
     text-align center
     padding 1em 0
@@ -389,6 +400,7 @@ S P E C F I C
 .section--prices
     text-align center
     margin 0 $column
+    padding-top 1em
 .price--small
 .price--large
     width 30%
@@ -451,6 +463,7 @@ S P E C F I C
 
 .section--contact
     margin 0 $column
+    padding-top 1em
     text-align center
     ul
         list-style none
