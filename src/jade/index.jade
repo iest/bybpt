@@ -41,6 +41,17 @@ html(lang='en')
                         li: a(href='#prices') Prices
                         li: a(href='#contact') Contact
                         
+            section.section--srp
+                .srp
+                    :markdown
+                        ## Lifestyle changes can be daunting. We can help.
+                        ### We're here to help **develop** knowledge, **support** you when it's needed most and **motivate** you to be your best.
+
+                    .toggleable
+                        a(href='#readmore').button.toggle
+                            i.icon-arrow-down 
+                            | Read More
+                        .toggleable__inner
 
             section.section--slider.no-padding
                 .swipe
@@ -55,41 +66,27 @@ html(lang='en')
                             img(src='/images/slider3.jpg')
                         div
                             img(src='/images/slider4.jpg')
-                        //- div
+                        div
                             img(src='/images/slider5.jpg')
                         div
                             img(src='/images/slider6.jpg')
                         div
                             img(src='/images/slider7.jpg')
-                        div
-                            img(src='/images/slider8.jpg')
                     .swipe-controls
                         .control--left: i.icon-angle-left
                         .control--right: i.icon-angle-right
 
+            section.section--read#readmore
+                :markdown
+                    Whether it’s weight loss, toning, gaining muscle, improving your fitness level for an event or merely personal satisfaction; we can educate and motivate you in a fun, unintimidating environment where your goals and enjoyment are our number one priority.
 
+                    With years of experience in the fitness industry we are currently based in the Roath area of Cardiff. We also cover surrounding areas reaching the more rural towns and villages bordering the city. Be Your Best Personal Training offers one to one or small group personal training sessions. These can be taken at your home, outside or at the gym.
 
-            section.section--srp
-                .srp
-                    :markdown
-                        ## Lifestyle changes can be daunting. We can help.
-                        ### We're here to help **develop** knowledge, **support** you when it's needed most and **motivate** you to be your best.
+                    If you are concerned about coming to use a public gym we can bring the gym to you! Myself and Rhodri have all the equipment needed to fulfil your training needs without you having to leave the house!
 
-                    .toggleable
-                        button.toggle
-                            i.icon-plus-sign 
-                            | Read More
-                        .toggleable__inner
-                            :markdown
-                                Whether it’s weight loss, toning, gaining muscle, improving your fitness level for an event or merely personal satisfaction; we can educate and motivate you in a fun, unintimidating environment where your goals and enjoyment are our number one priority.
+                    The outdoor sessions, often held in parks or local forestry areas can be mixed with gym sessions. They are a great way to get some fresh air and give you a different aspect to your exercise needs.
 
-                                With years of experience in the fitness industry we are currently based in the Roath area of Cardiff. We also cover surrounding areas reaching the more rural towns and villages bordering the city. Be Your Best Personal Training offers one to one or small group personal training sessions. These can be taken at your home, outside or at the gym.
-
-                                If you are concerned about coming to use a public gym we can bring the gym to you! Myself and Rhodri have all the equipment needed to fulfil your training needs without you having to leave the house!
-
-                                The outdoor sessions, often held in parks or local forestry areas can be mixed with gym sessions. They are a great way to get some fresh air and give you a different aspect to your exercise needs.
-
-                                All gym training sessions are based in the Roath area of Cardiff in a local, friendly gym. People of all abilities are welcomed and encouraged here.
+                    All gym training sessions are based in the Roath area of Cardiff in a local, friendly gym. People of all abilities are welcomed and encouraged here.
 
             section.section--profiles
                 .section__title#team
@@ -157,21 +154,21 @@ html(lang='en')
                     .price--small
                         .session 5 x sessions
                         .price 
-                            .price__amount &pound;26 
+                            .price__amount &pound;28 
                             .price__time per hour
-                            .price__total (&pound;130)
+                            .price__total (&pound;140)
                     .price--large
                         .session 10 x sessions
                         .price 
-                            .price__amount &pound;23 
+                            .price__amount &pound;25 
                             .price__time per hour
-                            .price__total (&pound;230)
+                            .price__total (&pound;250)
                     .price--small
                         .session 20 x sessions
                         .price 
-                            .price__amount &pound;20 
+                            .price__amount &pound;21 
                             .price__time per hour
-                            .price__total (&pound;400)
+                            .price__total (&pound;420)
                     .price__discount 20% off for students
         hr
         .container
@@ -207,5 +204,6 @@ html(lang='en')
                     })(document, 'script');
         footer
             p Copyright Be Your Best Personal Training &copy; 2013
-            a(href='http://iestynwilliams.net'): img(src='/images/iw.svg', alt='By Iestyn Williams')
+            a(href='http://iestynwilliams.net')
+                img(src='/images/iw.svg', alt='By Iestyn Williams')
         script(src='app.min.js')

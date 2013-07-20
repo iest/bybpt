@@ -1,10 +1,4 @@
 window.onload = function() {
-  document.querySelector('.toggle')
-    .addEventListener('click', function() {
-      document.querySelector('.toggleable')
-        .classList.toggle('active');
-
-    });
 
   // Swipejs slider
   slider = new Swipe(document.querySelector('.swipe'), {
