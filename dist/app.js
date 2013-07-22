@@ -1,5 +1,7 @@
 window.onload = function() {
 
+  document.querySelector('body').classList.remove('not-loaded');
+
   var doc = document.documentElement,
       body = document.body,
       nav = document.querySelector('.header-nav'),

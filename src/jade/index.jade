@@ -28,7 +28,7 @@ html(lang='en')
         | <script src="http://localhost:35729/livereload.js"></script>
 
 
-    body
+    body.not-loaded
         .container
             header.header
                 h1
@@ -67,6 +67,8 @@ html(lang='en')
                             img(src='/images/slider1.jpg')
                         div
                             img(src='/images/slider2.jpg')
+                        div
+                            img(src='/images/slider10.jpg')
                         div
                             img(src='/images/slider3.jpg')
                         div
@@ -176,9 +178,9 @@ html(lang='en')
                             .price__time per hour
                             .price__total (&pound;420)
                     .price__discount 20% off for students
-        hr
+        hr#contact
         .container
-            section.section--contact#contact
+            section.section--contact
                 .section__title
                     h1 Contact Us
                 p Give us a call or fill out the form below.

@@ -383,6 +383,8 @@ ul.icons-ul > li .icon-li{width:.7142857142857143em;display:inline-block;text-al
 *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
 .container{max-width:60em;margin:0 auto}
 body{font-family:"ff-tisa-web-pro",'Athelas',serif;color:#373637;background-color:#e9e9e9}
+.not-loaded .swipe-wrap > div{display:none;}
+.not-loaded .swipe-wrap > div:first-of-type{display:block}
 img{width:100%}
 h1,h2,h3,h4{font-family:"futura-pt","Futura",sans-serif;margin:.5em 0}
 h1{font-size:2em;text-align:center}
