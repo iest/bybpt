@@ -2,13 +2,10 @@ doctype 5
 html(lang='en')
     
     head
-        //- Give some love to IE
+        title Be Your Best Personal Training
+        meta(name="description",content="Personal Training based in Cardiff")
         meta(http-equiv="X-UA-Compatible", content="IE=Edge")
-
-        //- This is pretty important, too
         meta(charset="utf-8")
-
-        //- Get the responsive ball rolling
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
         //- Typekit for lovely webfonts
@@ -16,16 +13,23 @@ html(lang='en')
         script(type="text/javascript")
             try{Typekit.load();}catch(e){}
 
-        title Be Your Best Personal Training
-
         //- Link to all the assets...
         link(rel='stylesheet', type='text/css', href='styles.css')
 
         //- Google analytics
-        //- 
+        script(type="text/javascript")
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-25755082-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
 
         //- Livereload script
-        | <script src="http://localhost:35729/livereload.js"></script>
+        //- | <script src="http://localhost:35729/livereload.js"></script>
 
 
     body.not-loaded
@@ -47,6 +51,10 @@ html(lang='en')
                         li: a(href='#contact') Contact
                         
             section.section--srp
+                .social
+                    a(href='http://www.facebook.com/pages/Be-Your-Best-Personal-Training/197244930321385'): i.icon-facebook-sign
+                    a(href='https://twitter.com/BeYourBestPT'): i.icon-twitter-sign
+                    a(href=''): i.icon-youtube-sign
                 .srp
                     :markdown
                         ## Lifestyle changes can be daunting. We can help.
@@ -66,6 +74,8 @@ html(lang='en')
                         div
                             img(src='/images/slider1.jpg')
                         div
+                            img(src='/images/slider8.jpg')
+                        div
                             img(src='/images/slider2.jpg')
                         div
                             img(src='/images/slider10.jpg')
@@ -83,7 +93,8 @@ html(lang='en')
                         .control--left: i.icon-angle-left
                         .control--right: i.icon-angle-right
 
-            section.section--read#readmore
+            hr#readmore
+            section.section--read
                 :markdown
                     Whether it’s weight loss, toning, gaining muscle, improving your fitness level for an event or merely personal satisfaction; we can educate and motivate you in a fun, unintimidating environment where your goals and enjoyment are our number one priority.
 
