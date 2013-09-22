@@ -33,6 +33,9 @@ green_dark = #5A923A
 purple = #5F3EF9
 blue = #1424C5
 
+comp1 = #3F00B2
+comp2 = #5A00FF
+
 white = #F5F5F5
 grey = #698794
 grey_fade = #92B4C2
@@ -99,9 +102,12 @@ p
     line-height 1.25em
 
 hr
-    border-bottom 2px solid yellow
+    border-bottom 3px solid lighten(yellow, 40%)
     border-top 0
-    box-shadow 0 0 1em rgba(grey, 0.25)
+    // box-shadow 0 0 1em rgba(grey, 0.25)
+
+hr#readmore
+    margin-top 0
 
 section
     clear both
@@ -111,6 +117,18 @@ section
 
 .section__title
     text-transform uppercase
+
+.section__callout
+    background-color lighten(yellow, 90%)
+    padding 0.5em
+    border-left 6px solid lighten(yellow, 30%)
+    font-family font_sans
+    font-size 1.15em
+    text-align left
+
+    p
+        margin 0
+
 
 
 
@@ -434,9 +452,8 @@ S P E C F I C
     padding 0.25em
     background-color darken(bg_light, 5%)
     color bg_dark
-    border 0.1em solid rgba(green, 0.7)
+    border 4px solid lighten(yellow, 50%)
     border-radius 4px
-    box-shadow 0 0.25em 1em darken(bg_light, 15%)
     .session
         font-size 90%
     .price
