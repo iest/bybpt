@@ -33,8 +33,8 @@ window.onload = function() {
     scrollyThing();
   };
 
-  // Swipejs slider
-  slider = new Swipe(document.querySelector('.swipe'), {
+  // Image slider
+  image_slider = new Swipe(document.querySelector('.image-slider'), {
     speed: 400,
     auto: 4000,
     continuous: true,
@@ -43,9 +43,28 @@ window.onload = function() {
   });
 
   document.querySelector('.control--left')
-    .addEventListener('click', slider.prev);
+    .addEventListener('click', image_slider.prev);
   document.querySelector('.control--right')
-    .addEventListener('click', slider.next);
+    .addEventListener('click', image_slider.next);
 
+  // Testimonials slider
+
+  function resizeSlider() {
+    var currentPos = testimonial_slider.getPos(),
+      currentHeight = document.querySelectorAll('.testimonial-slider .swipe-wrap div')[currentPos].offsetHeight,
+      wrapper = document.querySelector('.testimonial-slider .swipe-wrap');
+      wrapper.style.height = currentHeight + 'px';
+  }
+
+  testimonial_slider = new Swipe(document.querySelector('.testimonial-slider'), {
+    speed: 400,
+    auto: 4000,
+    continuous: false,
+    disableScroll: false,
+    stopPropagation: false,
+    callback: resizeSlider
+  });
+
+  resizeSlider();
 
 };
