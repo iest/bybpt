@@ -118,7 +118,11 @@ section
 .section__title
     text-transform uppercase
 
+a.section__callout
 .section__callout
+    display block
+    text-decoration none
+    color black
     background-color lighten(yellow, 90%)
     padding 0.5em
     border-left 6px solid lighten(yellow, 30%)
@@ -175,6 +179,7 @@ S L I D E R S
 
 .testimonial-slider .swipe-wrap > div
     margin 0.5em 0
+    text-align left
     blockquote
         border-left 3px solid grey
         padding 0.5em
@@ -583,3 +588,13 @@ footer
     img
         width 2em
         margin-top 1.5em
+
+
+// Modifiers
+.center
+    display block
+    text-align center
+    margin 0 auto
+
+.hidden
+    display none
