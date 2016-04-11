@@ -1,16 +1,30 @@
 {
-  "name": "BYBPT_V4",
-  "version": "4.0.0",
-  "description": "ERROR: No README.md file found!",
+  "name": "bybpt",
+  "version": "4.0.1",
+  "description": "The MIT License (MIT)",
   "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.1",
+    "grunt-contrib-stylus": "^0.5.0",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-watch": "^0.4.3",
+    "markdown": "^0.4.0",
+    "grunt-contrib-uglify": "^0.2.0",
+    "grunt-contrib-jade": "^0.5.1"
+  },
+  "private": true,
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
-  "author": "Iestyn Williams",
-  "license": "BSD",
-  "devDependencies": {
-    "markdown": "~0.4.0",
-    "grunt-contrib-concat": "~0.3.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iest/bybpt.git"
+  },
+  "author": "Iestyn Williams <iest@me.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/iest/bybpt/issues"
+  },
+  "homepage": "https://github.com/iest/bybpt#readme"
 }
